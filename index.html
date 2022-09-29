@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Actividad Asincronica</title>
@@ -11,49 +15,61 @@
 <body>
     <header>
         <div class="navbar">
-            <h2>Encabezado</h2>
+            <h2>Mi Restaurante</h2>
 
             <ul class="navbar-items">
-                <li >lorem</li>
-                <li>ipsum</li>
-                <li>Contacto</li>
+                <li class="active"><a href="#home">Inicio</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#aboutus">Nosotros</a></li>
             </ul>
         </div>
     </header>
 
-    <section id="seccion-principal">
-        <h1>Seccion Principal</h1>
-        <p><strong>Lorem ipsum</strong> dolor sit, amet consectetur adipisicing elit. Quidem, sed. Laboriosam, 
-            vero <i>sunt</i> itaque non suscipit quo expedita facere, tempora nisi, consectetur aperiam.</p>
 
-        <p><b>Lorem ipsum</b> dolor sit, <em>consectetur</em> adipisicing elit. Quidem, sed. Laboriosam, 
-            vero sunt itaque non suscipit quo expedita facere, tempora nisi, consectetur aperiam.</p>
+    <div class="hero" id="home">
+        <div class="hero-content">
+            <h1>¡Bienvenidos!</h1>    
+            <p class="muted">Una experiencia gastronomica para recordar</p>   
+        </div>
+    </div>
+    <section id="menu">
+        <h2>Descubre Los Sabores Argentinos</h2>
         
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="assets/img/img1.jpg" >
+                        <img class="card-img-top img-fluid" src="assets/img/menu_2.jpg" >
+                        <div class="card-body">
+                            <h3 class="card-title">Carpaccio de Pulpo Español</h3>
+                            <div class="card-text">
+                                
+							En&nbsp;emulsión&nbsp; de lemon&nbsp; grass y wasabi, alcaparras, tomates y coulis de azafràn de San Rafael (Prov. de Mendoza)						
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="assets/img/menu_1.jpg" >
                         <div  class="card-body">
-                            <h3 class="card-title">Lago Nieve</h3>
+                            <h3 class="card-title">Jugoso bife Black Angus con aligote de papas Asterix</h3>
+                            <p class="card-text">
+                                En cocción lenta con polenta blanca trufada de Colonia Caroya (Prov. de Córdoba), aire de azafrán de Uspallata (Prov. de Mendoza) y monedas de zucchinis amarillo
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card">
-                        <img class="card-img-top img-fluid" src="assets/img/img2.jpg" >
-                        <div class="card-body">
-                            <h3 class="card-title">Lago Bosque</h3>
-                          </div>
-                    </div>
-                </div>
 
                 <div class="col-12 col-lg-4 col-md-6 col-sm-12">
                     <div class="card w-100">
-                        <img class="card-img-top img-fluid" src="assets/img/img3.jpg" >
+                        <img class="card-img-top img-fluid" src="assets/img/menu_3.jpg" >
                         <div class="card-body">
-                          <h3 class="card-title">Lago Nieve</h3>
+                          <h3 class="card-title">Pannacotta de chocolate blanco</h3>
+                            <p class="card-text">
+                                Con coco, dulce de leche, aro crocante y riñg de maracuya misionero 
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -62,9 +78,24 @@
         </div>
 
         </section>
+        
+        <section id="aboutus">
+            <div class="content">
+                <h2>Nosotros</h2>
+                
+                <p><strong>MiRestaurante</strong> les propone tres espacios diferentes:  
+                    el salón principal, acogedor y elegante reminiscente de un pequeño restaurante parisino; 
+                    «las veredas de <strong>MiRestaurante</strong>» como nos gusta llamarlas, confortables, acondicionadas y protegidas del clima, y 
+                    finalmente nuestra cava «dinatoire» en un ambiente más íntimo, en madera, donde las comidas transcurren
+                    envueltas en la mágica atmósfera que proporcionan los vinos. Tres formas distintas de vivir la experiencia, 
+                    diferentes atmósferas con la misma dedicación y servicio.
+                </p>
+            </div>
+        </section>
 
     <footer class="footer">
-        <p>Pie de la pagina.</p>
+        <h6>MiRestaurante</h6>
+        <p class="muted">	&#169; Copyright all rights reserved</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
